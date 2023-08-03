@@ -147,3 +147,5 @@ print "What city are you from?"
 city = gets.chomp
 city.capitalize!
 puts "You are from #{city}!"
+
+
