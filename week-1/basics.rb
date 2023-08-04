@@ -59,23 +59,42 @@ EVERYTHING IN RUBY IS AN OBJECT
     - .include? : returns true if the string contains the given substring or character
     - .empty? : returns true if the string is empty 
     - .nil? : returns true if the string is nil 
+    - .index : returns the index of the first occurrence of the given substring or character
 
     To print a string with a variable, you can use string interpolation:
     Eg: name = "ruby"
         puts "Hello #{name}!"
         => Hello ruby!
 
+    ll stings start at  index 0, and you can access individual characters using bracket notation:
+    Eg: name = "ruby"
+        puts name[0]
+        => r
+
+    Ruby String methods cheatsheet: https://www.shortcutfoo.com/app/dojos/ruby-strings/cheatsheet
+
+
 - Numeric Methods:
-    - .odd?
-    - .even?
-    - .round
-    - .abs
-    - .times
-    - .upto
-    - .floor
-    - .ceil
-    - .to_i
-    - .to_f
+    - .odd? : returns true if the number is odd
+    - .even? : returns true if the number is even
+    - .round : rounds a float to the nearest integer
+    - .abs : returns the absolute value of a number
+    - .times : iterates block int times, passing in values from zero to int - 1
+    - .upto : iterates block int times, passing in values from zero to int - 1
+    - .floor : returns the largest integer less than or equal to float
+    - .ceil : returns the smallest integer greater than or equal to float
+    - .to_i : converts a number to an integer
+    - .to_f : converts a number to a float
+    - .to_s : converts a number to a string
+
+    Numeric Class
+    - Math is a module that provides a lot of mathematical methods and constants. For example Math.log(1) => 0.0
+    - there are a lot of math operations in the Math module/class
+
+    When you add two integers you get an interget; when you add an integer and a float you get a float; when you add two floats you get a float.
+    Ruby distinguishes between integers and floats, and will convert between them as needed.
+
+    More number methods: https://www.freecodecamp.org/news/ruby-number-methods-integer-and-float-methods-with-examples/ 
 
 - Getting input from users: 
     - gets is the Ruby method that retrieves input from users. 
