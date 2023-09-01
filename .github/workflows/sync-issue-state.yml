@@ -1,0 +1,23 @@
+name: Sync Issue State with Project Board Columns
+
+on: 
+  schedule:
+    # At minute 0 every 2 hours
+    - cron: 0 0-23/2 * * *
+  
+  workflow_dispatch:
+    # Manual trigger
+
+jobs:
+  issue-state-sync:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Sync issue states
+        uses: dasmerlon/project-issue-state-sync@v2
+        with:
+          github_token: ${{ secrets.PROJECT_BOARD_TOKEN }}
+          owner: That-Lady-Dev
+          project_number: 4
+          closed_statuses: Completed
+          open_statuses: To Learn, Practive/Exercises, Currently Learning, Need Help/Clarification
