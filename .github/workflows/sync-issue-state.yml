@@ -20,4 +20,4 @@ jobs:
           owner: That-Lady-Dev
           project_number: 4
           closed_statuses: Completed
-          open_statuses: To Learn, Practive/Exercises, Currently Learning, Need Help/Clarification
+          open_statuses: To Learn, Practice/Exercises, Currently Learning, Need Help/Clarification
